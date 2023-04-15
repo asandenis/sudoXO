@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+
+<HTML>
+<HEAD>
+    <title>sudo XO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script type="text/javascript" src="script.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+</HEAD>
+<BODY>
+    <div id="theme">
+        <div id="themealign">
+            <img src="images/darkmode.png" id="icon">
+            <button id="ptheme" onclick="changetheme()">Change theme</button>
+        </div>
+    </div>
+    <div id="display">
+        <div id="displayalign">
+            <h1 id="title">$sudo XO</h1>
+            <h2 id="wincount">Wins:</h2>
+            <h2 id="winscount">X 0 : O 0</h2>
+            <p id="result"></p>
+        </div>
+    </div>
+    <div class="board">
+        <div class="row">
+            <div class="cell" id="cell-0" onclick="play(this.id)">
+                <p class="pcell" id="pcell-0"></p>
+            </div>
+            <div class="cell" id="cell-1" onclick="play(this.id)">
+                <p class="pcell" id="pcell-1"></p>
+            </div>
+            <div class="cell" id="cell-2" onclick="play(this.id)">
+                <p class="pcell" id="pcell-2"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell-3" onclick="play(this.id)">
+                <p class="pcell" id="pcell-3"></p>
+            </div>
+            <div class="cell" id="cell-4" onclick="play(this.id)">
+                <p class="pcell" id="pcell-4"></p>
+            </div>
+            <div class="cell" id="cell-5" onclick="play(this.id)">
+                <p class="pcell" id="pcell-5"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cell" id="cell-6" onclick="play(this.id)">
+                <p class="pcell" id="pcell-6"></p>
+            </div>
+            <div class="cell" id="cell-7" onclick="play(this.id)">
+                <p class="pcell" id="pcell-7"></p>
+            </div>
+            <div class="cell" id="cell-8" onclick="play(this.id)">
+                <p class="pcell" id="pcell-8"></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="resetbttncontainer">
+            <button onclick="reset()" id="resetbttn">Reset Game</button>
+        </div>
+    </div>
+</BODY>
+</HTML>

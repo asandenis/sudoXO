@@ -1,0 +1,182 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #eeeeee; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4CAF50; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3c9640; 
+}
+
+@font-face {
+    font-family: "Mode Seven";
+    src: url('fonts/Modeseven-L3n5.ttf') format('truetype');
+}
+
+#theme {
+    position: fixed;
+    top: 10px;
+    right: -25px;
+    font-family: "Mode Seven";
+    z-index: 1;
+}
+
+#themealign {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+}
+
+#icon {
+    position: absolute;
+    width: 25px;
+    height: auto;
+    pointer-events: none;
+    top: 10px;
+    -ms-transform: translate(115%, 0%);
+    transform: translate(115%, 0%);
+    z-index: 3;
+}
+
+#ptheme {
+    position: relative;
+    top: 50px;
+    background-color: #000000;
+    border-width: 2px;
+    border-color: #ffffff;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Mode Seven';
+    z-index: 2;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#ptheme:hover {
+    border-color: #4CAF50;
+}
+
+#display {
+    height: 200px;
+    position: relative;
+    z-index: 0;
+}
+
+#displayalign {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Mode Seven';
+}
+
+#title {
+    font-size: 60px;
+    padding-top: 30px;
+}
+
+#wincount, #winscount {
+    font-size: 25px;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    color: #000000;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    font-size: 40px;
+    font-family: 'Mode Seven';
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    display: table-cell;
+    position: relative;
+}
+
+.cell:hover {
+    background-color: #eeeeee;
+}
+
+.pcell {
+    position: relative;
+    top: -10%;
+    vertical-align: middle;
+}
+
+.container {
+    height: 150px;
+    position: relative;
+}
+
+#resetbttncontainer {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#resetbttn {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Mode Seven';
+}
+
+#resetbttn:hover {
+    background-color: #3c9640;
+}
+
+@media screen and (max-width: 750px) {
+    .board {
+        padding-top: 75px;
+    }
+
+    .container {
+        height: 175px;
+    };
+}
